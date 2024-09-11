@@ -1,4 +1,5 @@
 *.out
+*.o
 testing.cpp
 classTest.h
 classTest.cpp
