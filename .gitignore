@@ -3,3 +3,4 @@ testing.cpp
 classTest.h
 classTest.cpp
 .vscode
+ignore*
