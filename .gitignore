@@ -1,7 +1,6 @@
 *.out
 *.o
-testing.cpp
-classTest.h
-classTest.cpp
 .vscode
 ignore*
+*test*
+*Test*
