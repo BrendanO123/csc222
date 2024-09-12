@@ -4,3 +4,4 @@
 ignore*
 *test*
 *Test*
+.DS_Store
