@@ -9,24 +9,29 @@ ostream& operator << (ostream &os, const test &s) {
 
 int main()
 {
-    test obj1 = test(3, 4);
-    test obj2 = test(3);
-    test obj3 = test();
-    test obj4 = test("General Kenobi", 3, 4);
-    test obj5 = test("General Kenobi", 3);
-    test obj6 = test("General Kenobi");
+    test obj1 = test(3, 4); // x,y
+    test obj2 = test(3); //x
+    test obj3 = test(); //empty
+    test obj4 = test("General Kenobi", 3, 4); //id, x, y
+    test obj5 = test("General Kenobi", 3); //id, x
+    test obj6 = test("General Kenobi"); //id
 
-    obj1.greet();
-    obj2.greet();
-    obj4.greet();
+    cout << "\nObject 1: "; obj1.greet();
+    cout << "Object 2: "; obj2.greet();
+    cout << "Object 4: "; obj4.greet();
     cout << endl;
 
-    cout << obj1.dist() << '\n' << obj4.dist() << '\n' << obj6.dist() << '\n' << endl;
-    cout << (obj1.larger(obj3) ? "Larger\n\n" : "Smaller\n\n");
+    cout 
+        << "Object 1 distance: " << obj1.dist() 
+        << "\nObject 4 distance: " << obj4.dist() 
+        << "\nObject 6 distance: " << obj6.dist() 
+        << '\n' << endl;
+    
+    cout << "Object 1 is " << (obj1.larger(obj3) ? "larger" : "smaller") << " than Object 3.\n\n";
 
-    cout << "(" << obj6.getX() << ", " << obj6.getY() << ")\n\n";
+    cout << "Object 6 is @: (" << obj6.getX() << ", " << obj6.getY() << ")\n\n";
 
-    cout << obj1.toString() << obj2 << obj4.toString() << endl;
+    cout << "Object 1: " << obj1.toString() << "Object 3: " << obj3 << "Object 4: " << obj4.toString() << endl;
     
     return 0;
 }
