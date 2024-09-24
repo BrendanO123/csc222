@@ -14,19 +14,19 @@ test :: test(string ID, int X, int Y){
     x = X; y = Y; id = ID;
 }
 
-void test :: greet(){
+void test :: greet() const{
     cout << "Why hello there, " << id << ". Nice to meet you!\n";
 }
-string test :: to_string(){
+string test :: toString() const{
     return ("My name is " + id + ", and I exist at (" + std :: to_string(x) + ", " + std :: to_string(y) + ").\n");
 }
 
-int test :: getX(){return x;}
-int test :: getY(){return y;}
+int test :: getX() const{return x;}
+int test :: getY() const{return y;}
 
-float test :: dist(){
+float test :: dist() const{
     return sqrt( x * x  +  y * y );
 }
-bool test :: larger(test other){
+bool test :: larger(const test other) const{
     return dist() > other.dist();
 }

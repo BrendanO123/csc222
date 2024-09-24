@@ -3,6 +3,10 @@
 #include "makeFileExample_Helper.h"
 using namespace std;
 
+ostream& operator << (ostream &os, const test &s) {
+    return (os << s.toString());
+}
+
 int main()
 {
     test obj1 = test(3, 4);
@@ -22,7 +26,7 @@ int main()
 
     cout << "(" << obj6.getX() << ", " << obj6.getY() << ")\n\n";
 
-    cout << obj1.to_string() << obj2.to_string() << obj4.to_string()<< endl;
+    cout << obj1.toString() << obj2 << obj4.toString() << endl;
     
     return 0;
 }

@@ -10,10 +10,10 @@ class test{
     public:
         test(int X=0, int Y=0);
         test(string ID, int X=0, int Y=0);
-        void greet();
-        float dist();
-        bool larger(test other);
-        int getX();
-        int getY();
-        string to_string();
+        void greet() const;
+        float dist() const;
+        bool larger(const test other) const;
+        int getX() const;
+        int getY() const;
+        string toString() const;
 };
