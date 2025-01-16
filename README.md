@@ -1,5 +1,5 @@
-# DE Computer Science csc222
-This is the general repository for my work in the csc222 class through the Arlington Career Center. However, most of my work will be done through seperate repositories which are linked here.
+# DE Computer Science CSC222
+This is the general repository for my work in the CSC222 class through the Arlington Career Center. However, most of my work will be done through seperate repositories which are linked here.
 
 ## Repositories:
 ### Minecraft Clone in GLFW
